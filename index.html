@@ -195,19 +195,21 @@
 		<!-- end container -->
 		<script>
 			window.onload = function () {
+				// Card titles
 				const barbarian = document.querySelector(
 					".clash-card__unit-stats--barbarian"
 				);
-				barbarian.style.backgroundColor = "#ec9b3b";
-				barbarian.style.color = "#ffffff";
-
 
 				const archer = document.querySelector(
 					".clash-card__unit-stats--archer"
 				);
+
+				// Card stat & footer colors colors
+				barbarian.style.backgroundColor = "#ec9b3b";
+				barbarian.style.color = "#ffffff";
+
 				archer.style.backgroundColor = "#ee5487";
 				archer.style.color = "#ffffff";
-
 
 				const giant = document.querySelector(".clash-card__unit-stats--giant");
 				giant.style.backgroundColor = "#f6901a";
@@ -219,32 +221,30 @@
 				goblin.style.backgroundColor = "#82bb30";
 				goblin.style.color = "#ffffff";
 
-
 				const wizard = document.querySelector(
 					".clash-card__unit-stats--wizard"
 				);
 				wizard.style.backgroundColor = "#4facff";
 				wizard.style.color = "#ffffff";
 
+				const archText = document.querySelector(".archer").children;
+				archText[2].innerHTML = "The Archer";
 
-                const archText = document.querySelector(".archer").children
-                archText[2].innerHTML = "The Archer"
+				const goblinText = document.querySelector(".goblin").children;
+				goblinText[2].innerHTML = "The Goblin";
 
-                const goblinText = document.querySelector(".goblin").children
-                goblinText[2].innerHTML = "The Goblin"
+				const statsColor = document.querySelector(".one-third");
+				statsColor.style.color = "#ffffff";
 
-                const statsColor = document.querySelector(".one-third")
-                statsColor.style.color = "#ffffff"
 
-                const lastThird = document.querySelector(".one-third.no-border")
-                lastThird.style.color = "#ffffff"
+				// cost font but only of the first card
+				const lastThird = document.querySelector(".one-third.no-border");
+				lastThird.style.color = "#ffffff";
 
-                // const sec = document.querySelector(".clash-card").children
-                // sec.children[2].style.font = "#4facff"}}
-                // phew
-								// well
-								// article work
-            }
+				// const sec = document.querySelector(".clash-card").children
+				// sec.children[2].style.font = "#4facff"}}
+				
+			};
 		</script>
 	</body>
 </html>
